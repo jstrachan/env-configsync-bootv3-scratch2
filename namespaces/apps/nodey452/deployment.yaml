@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: nodey460-nodey460
+  namespace: myapps
   labels:
     draft: draft-app
     chart: "nodey460-1.0.9"
