@@ -5,7 +5,7 @@ kind: Service
 metadata:
   name: nodey460
   labels:
-    chart: "nodey460-1.0.10"
+    chart: "nodey460-1.0.9"
   annotations:
     fabric8.io/expose: "true"
     fabric8.io/ingress.annotations: 'kubernetes.io/ingress.class: nginx'
