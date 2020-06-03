@@ -5,7 +5,7 @@ metadata:
 upstream:
     type: git
     git:
-        commit: 4b644af6411615d27c99fd2b3318a76fb82fe674
+        commit: 012856b7f3823ddbc0be4a3cc679f300f059d751
         repo: https://github.com/jstrachan/nodey460
         directory: /kubernetes/nodey460/templates
-        ref: v1.0.30
+        ref: v1.0.31
