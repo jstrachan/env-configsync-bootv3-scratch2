@@ -1,0 +1,51 @@
+# Source: nodey460/templates/deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nodey460-nodey460
+  namespace: myapps
+  namespace: myapps
+    draft: draft-app
+    chart: "nodey460-1.0.29"
+spec:
+  selector:
+    matchLabels:
+      app: nodey460-nodey460
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        draft: draft-app
+        app: nodey460-nodey460
+    spec:
+      containers:
+      - name: nodey460
+        image: "gcr.io/jstrachan-multicluster/nodey460:1.0.29"
+        imagePullPolicy: IfNotPresent
+        env:
+        envFrom: null
+        ports:
+        - containerPort: 8080
+        livenessProbe:
+          httpGet:
+            path: /
+            port: 8080
+          initialDelaySeconds: 60
+          periodSeconds: 10
+          successThreshold: 1
+          timeoutSeconds: 1
+        readinessProbe:
+          httpGet:
+            path: /
+            port: 8080
+          periodSeconds: 10
+          successThreshold: 1
+          timeoutSeconds: 1
+        resources:
+          limits:
+            cpu: 400m
+            memory: 256Mi
+          requests:
+            cpu: 200m
+            memory: 128Mi
+      terminationGracePeriodSeconds:
