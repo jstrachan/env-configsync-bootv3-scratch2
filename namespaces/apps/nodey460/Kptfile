@@ -1,0 +1,11 @@
+apiVersion: kpt.dev/v1alpha1
+kind: Kptfile
+metadata:
+    name: nodey460
+upstream:
+    type: git
+    git:
+        commit: 3ad1e7de8910ddd9a3b0ead7fecc4a8981bdb2b0
+        repo: https://github.com/jstrachan/nodey460
+        directory: /kubernetes/nodey460/templates
+        ref: v1.0.38
