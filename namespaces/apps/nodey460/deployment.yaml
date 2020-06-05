@@ -6,7 +6,7 @@ metadata:
   namespace: myapps
   labels:
     draft: draft-app
-    chart: "nodey460-1.0.57"
+    chart: "nodey460-1.0.59"
 spec:
   selector:
     matchLabels:
@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
       - name: nodey460
-        image: "gcr.io/jstrachan-multicluster/nodey460:1.0.57"
+        image: "gcr.io/jstrachan-multicluster/nodey460:1.0.59"
         imagePullPolicy: IfNotPresent
         env:
         envFrom: null
