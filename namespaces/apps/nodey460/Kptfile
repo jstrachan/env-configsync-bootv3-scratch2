@@ -5,7 +5,7 @@ metadata:
 upstream:
     type: git
     git:
-        commit: 81164574ff67bb0e5f8fe49dd9d5c4d9cd72c365
+        commit: 811d77d356585695f2d6292af1b725e2b23c873b
         repo: https://github.com/jstrachan/nodey460
         directory: /charts/nodey460/resources
-        ref: v1.0.57
+        ref: v1.0.59
