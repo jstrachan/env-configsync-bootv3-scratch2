@@ -5,7 +5,7 @@ metadata:
   name: nodey460
   namespace: myapps
   labels:
-    chart: "nodey460-1.0.61"
+    chart: "nodey460-1.0.65"
   annotations:
     fabric8.io/expose: "true"
     fabric8.io/ingress.annotations: 'kubernetes.io/ingress.class: nginx'
