@@ -5,7 +5,7 @@ metadata:
   name: godemo48
   namespace: myapps
   labels:
-    chart: "godemo48-0.0.8"
+    chart: "godemo48-0.0.10"
   annotations:
     fabric8.io/expose: "true"
     fabric8.io/ingress.annotations: 'kubernetes.io/ingress.class: nginx'

@@ -5,7 +5,7 @@ metadata:
 upstream:
     type: git
     git:
-        commit: e449ffcb72188acd0869b60c4af70185edc3b0e1
+        commit: 0750f11a94436214d122c8420a9c2acdc5ae154a
         repo: https://github.com/jstrachan/godemo48
         directory: /charts/godemo48/resources
-        ref: v0.0.8
+        ref: v0.0.10
