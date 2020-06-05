@@ -1,0 +1,11 @@
+apiVersion: kpt.dev/v1alpha1
+kind: Kptfile
+metadata:
+    name: nodey471
+upstream:
+    type: git
+    git:
+        commit: 96fb815d9aeb78a994904bf22df12156b7111f7b
+        repo: https://github.com/jstrachan/nodey471
+        directory: /charts/nodey471/resources
+        ref: v1.0.1
