@@ -14,7 +14,3 @@ spec:
           serviceName: nodey460
           servicePort: 80
     host: nodey460-myapps.34.76.161.100.nip.io
-  tls:
-  - hosts:
-    - nodey460-myapps.34.76.161.100.nip.io
-    secretName: ""
