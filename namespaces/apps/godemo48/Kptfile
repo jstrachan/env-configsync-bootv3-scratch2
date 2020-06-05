@@ -1,0 +1,11 @@
+apiVersion: kpt.dev/v1alpha1
+kind: Kptfile
+metadata:
+    name: godemo48
+upstream:
+    type: git
+    git:
+        commit: e449ffcb72188acd0869b60c4af70185edc3b0e1
+        repo: https://github.com/jstrachan/godemo48
+        directory: /charts/godemo48/resources
+        ref: v0.0.8
