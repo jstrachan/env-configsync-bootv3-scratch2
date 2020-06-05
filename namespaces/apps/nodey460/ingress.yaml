@@ -1,0 +1,20 @@
+# Source: nodey460/templates/ingress.yaml
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    kubernetes.io/ingress.class: nginx
+  name: nodey460
+  namespace: myapps
+spec:
+  rules:
+  - http:
+      paths:
+      - backend:
+          serviceName: nodey460
+          servicePort: 80
+    host: nodey460.mydomain
+  tls:
+  - hosts:
+    - nodey460.mydomain
+    secretName: ""

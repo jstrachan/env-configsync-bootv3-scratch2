@@ -1,0 +1,11 @@
+apiVersion: kpt.dev/v1alpha1
+kind: Kptfile
+metadata:
+    name: nodey460
+upstream:
+    type: git
+    git:
+        commit: 70bd578075505d3afcfed8ceeb9b2adbe0c6f717
+        repo: https://github.com/jstrachan/nodey460
+        directory: /charts/nodey460/resources
+        ref: v1.0.55
