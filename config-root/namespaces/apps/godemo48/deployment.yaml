@@ -6,7 +6,7 @@ metadata:
   namespace: myapps
   labels:
     draft: draft-app
-    chart: "godemo48-0.0.10"
+    chart: "godemo48-0.0.12"
 spec:
   selector:
     matchLabels:
@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
       - name: godemo48
-        image: "gcr.io/jstrachan-multicluster/godemo48:0.0.10"
+        image: "gcr.io/jstrachan-multicluster/godemo48:0.0.12"
         imagePullPolicy: IfNotPresent
         env:
         envFrom: null
