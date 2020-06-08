@@ -39,6 +39,24 @@ ingress:
     enabled: false
     production: false
 kaniko: true
+repository: nexus
+storage:
+  backup:
+    enabled: false
+    url: ""
+  logs:
+    enabled: false
+    url: ""
+  reports:
+    enabled: false
+    url: ""
+  repository:
+    enabled: false
+    url: ""
+vault: {}
+velero:
+  schedule: ""
+  ttl: ""
 versionStream:
   ref: e3cb4443dd4d0c7e99e01e3e4014aae8805a9d0d
   url: https://github.com/jenkins-x/jxr-versions.git
