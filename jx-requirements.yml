@@ -1,0 +1,45 @@
+autoUpdate:
+  enabled: false
+  schedule: ""
+bootConfigURL: https://github.com/jenkins-x/jxr-boot-config
+buildPackRef: kpt
+buildPackURL: https://github.com/jstrachan/jxr-packs-kubernetes.git
+cluster:
+  clusterName: tmpcluster
+  devEnvApprovers:
+  - jstrachan
+  environmentGitOwner: jstrachan
+  gitKind: github
+  gitName: github
+  gitServer: https://github.com
+  namespace: jx
+  project: jstrachan-multicluster
+  provider: gke
+  registry: gcr.io
+  zone: europe-west1-d
+environments:
+- ingress:
+    domain: 34.76.161.100.nip.io
+    externalDNS: false
+    namespaceSubDomain: -jx.
+    tls:
+      email: ""
+      enabled: false
+      production: false
+  key: dev
+  owner: jstrachan
+  repository: env-configsync-bootv3-scratch2
+gitops: true
+ingress:
+  domain: ""
+  externalDNS: false
+  namespaceSubDomain: -jx.
+  tls:
+    email: ""
+    enabled: false
+    production: false
+kaniko: true
+versionStream:
+  ref: e3cb4443dd4d0c7e99e01e3e4014aae8805a9d0d
+  url: https://github.com/jenkins-x/jxr-versions.git
+webhook: lighthouse
