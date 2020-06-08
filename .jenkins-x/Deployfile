@@ -3,5 +3,5 @@ kind: DeployConfig
 metadata:
   name: jx-deploy
 spec:
-  kptPath: namespaces/apps
+  kptPath: config-root/namespaces/apps
   namespace: myapps
