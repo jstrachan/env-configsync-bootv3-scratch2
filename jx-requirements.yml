@@ -12,7 +12,7 @@ cluster:
   gitKind: github
   gitName: github
   gitServer: https://github.com
-  namespace: jx
+  namespace: myapps
   project: jstrachan-multicluster
   provider: gke
   registry: gcr.io
