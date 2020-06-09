@@ -14,8 +14,5 @@ spec:
       - backend:
           serviceName: godemo48
           servicePort: 80
-  tls:
-  - hosts:
-    - godemo48.34.76.100.223.nip.io
 status:
   loadBalancer: {}
