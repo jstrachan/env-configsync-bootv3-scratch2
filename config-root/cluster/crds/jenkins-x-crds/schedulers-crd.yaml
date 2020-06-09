@@ -21,3 +21,26 @@ spec:
   - name: v1
     served: true
     storage: true
+status:
+  acceptedNames:
+    categories:
+    - all
+    kind: Scheduler
+    listKind: SchedulerList
+    plural: schedulers
+    shortNames:
+    - scheduler
+    singular: scheduler
+  conditions:
+  - lastTransitionTime: "2020-03-30T19:10:48Z"
+    message: no conflicts found
+    reason: NoConflicts
+    status: "True"
+    type: NamesAccepted
+  - lastTransitionTime: null
+    message: the initial names have been accepted
+    reason: InitialNamesAccepted
+    status: "True"
+    type: Established
+  storedVersions:
+  - v1
