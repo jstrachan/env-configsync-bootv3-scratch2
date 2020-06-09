@@ -18,6 +18,7 @@ metadata:
   labels:
     app: tekton-pipelines-controller
   name: tekton-pipelines-controller
+  namespace: jx
 spec:
   ports:
   - name: metrics

@@ -1,0 +1,11 @@
+apiVersion: kpt.dev/v1alpha1
+kind: Kptfile
+metadata:
+    name: jxboot-helmfile-resources
+upstream:
+    type: git
+    git:
+        commit: 414ea1431a4770b09f3fbb34e5be6ff41c884b63
+        repo: https://github.com/jenkins-x/jxr-kube-resources
+        directory: /jenkins-x/jxboot-helmfile-resources
+        ref: master

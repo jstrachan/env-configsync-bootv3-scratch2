@@ -18,6 +18,7 @@ metadata:
   labels:
     app: tekton-pipelines-webhook
   name: tekton-pipelines-webhook
+  namespace: jx
 spec:
   ports:
   - port: 443
