@@ -34,10 +34,10 @@ spec:
         imagePullPolicy: "IfNotPresent"
         args:
         - /nginx-ingress-controller
-        - --default-backend-service=jx/nginx-ingress-default-backend
+        - --default-backend-service=nginx/nginx-ingress-default-backend
         - --election-id=ingress-controller-leader
         - --ingress-class=nginx
-        - --configmap=jx/nginx-ingress-controller
+        - --configmap=nginx/nginx-ingress-controller
         securityContext:
           capabilities:
             drop:
