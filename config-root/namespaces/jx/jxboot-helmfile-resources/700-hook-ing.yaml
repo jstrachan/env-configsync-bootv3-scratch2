@@ -1,20 +1,22 @@
-# Source: jxboot-helmfile-resources/templates/700-hook-ing.yaml
 apiVersion: networking.k8s.io/v1beta1
 kind: Ingress
 metadata:
-  name: hook
-  namespace: jx
   annotations:
     kubernetes.io/ingress.class: nginx
+  creationTimestamp: null
+  name: hook
+  namespace: jx
 spec:
   rules:
-  - http:
+  - host: hook.34.76.100.223.nip.io
+    http:
       paths:
       - backend:
           serviceName: hook
           servicePort: 80
-    host: hook.cluster.local
   tls:
   - hosts:
-    - hook.cluster.local
-    secretName: "tls-cluster-local-s"
+    - hook.34.76.100.223.nip.io
+    secretName: tls-cluster-local-s
+status:
+  loadBalancer: {}

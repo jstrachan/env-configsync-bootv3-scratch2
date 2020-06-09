@@ -18,20 +18,12 @@ cluster:
   registry: gcr.io
   zone: europe-west1-d
 environments:
-- ingress:
-    domain: 34.76.161.100.nip.io
-    externalDNS: false
-    namespaceSubDomain: -jx.
-    tls:
-      email: ""
-      enabled: false
-      production: false
-  key: dev
+- key: dev
   owner: jstrachan
   repository: env-configsync-bootv3-scratch2
 gitops: true
 ingress:
-  domain: ""
+  domain: 34.76.100.223.nip.io
   externalDNS: false
   namespaceSubDomain: -jx.
   tls:
