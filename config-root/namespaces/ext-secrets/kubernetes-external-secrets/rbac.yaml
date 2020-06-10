@@ -45,7 +45,7 @@ roleRef:
   name: kubernetes-external-secrets
 subjects:
 - name: kubernetes-external-secrets
-  namespace: "jx"
+  namespace: ext-secrets
   kind: ServiceAccount
 ---
 # Source: kubernetes-external-secrets/templates/rbac.yaml
@@ -64,5 +64,5 @@ roleRef:
   name: system:auth-delegator
 subjects:
 - name: kubernetes-external-secrets
-  namespace: "jx"
+  namespace: ext-secrets
   kind: ServiceAccount
