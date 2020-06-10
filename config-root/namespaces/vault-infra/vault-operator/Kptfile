@@ -1,0 +1,11 @@
+apiVersion: kpt.dev/v1alpha1
+kind: Kptfile
+metadata:
+    name: vault-operator
+upstream:
+    type: git
+    git:
+        commit: 2a7ad8ec88f35620ad8571733ac5bba816dc2ea8
+        repo: https://github.com/jenkins-x/jxr-kube-resources
+        directory: /banzaicloud-stable/vault-operator
+        ref: master
