@@ -13,3 +13,4 @@ spec:
     singular: vault
   scope: Namespaced
   version: v1alpha1
+
