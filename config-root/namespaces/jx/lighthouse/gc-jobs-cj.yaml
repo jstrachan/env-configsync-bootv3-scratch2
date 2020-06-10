@@ -3,6 +3,7 @@ apiVersion: batch/v1beta1
 kind: CronJob
 metadata:
   name: lighthouse-gc-jobs
+  namespace: jx
   labels:
     app: jenkins-x-lighthouse-gcjobs
 spec:

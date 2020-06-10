@@ -3,6 +3,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: lighthouse-foghorn
+  namespace: jx
   labels:
     draft: draft-app
     chart: "lighthouse-0.0.633"
