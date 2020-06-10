@@ -5,7 +5,7 @@ metadata:
 upstream:
     type: git
     git:
-        commit: 66b69559dc7aa315734b202ef2dc72f2dc998b15
+        commit: 26d4b383bf615fa9270ebc02ff566483b7713be1
         repo: https://github.com/jenkins-x/jxr-kube-resources
         directory: /jenkins-x/lighthouse
         ref: master
