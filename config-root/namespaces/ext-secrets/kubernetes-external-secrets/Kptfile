@@ -1,0 +1,11 @@
+apiVersion: kpt.dev/v1alpha1
+kind: Kptfile
+metadata:
+    name: kubernetes-external-secrets
+upstream:
+    type: git
+    git:
+        commit: 66b69559dc7aa315734b202ef2dc72f2dc998b15
+        repo: https://github.com/jenkins-x/jxr-kube-resources
+        directory: /external-secrets/kubernetes-external-secrets
+        ref: master
