@@ -83,7 +83,7 @@ spec:
       # This is true by default
       preFlightChecks: true
     kubernetes:
-      secretNamespace: jx
+      secretNamespace: vault-infra
   # A YAML representation of a final vault config file.
   # See https://www.vaultproject.io/docs/configuration/ for more information.
   config:
@@ -113,9 +113,9 @@ spec:
     - type: kubernetes
       roles:
       - # Allow every pod in the default namespace to use the secret kv store
-        name: jx
-        bound_service_account_names: ["jx", "vault-secrets-webhook", "vault"]
-        bound_service_account_namespaces: ["jx", "vswh"]
+        name: vault-infra
+        bound_service_account_names: ["vault-infra", "vault-secrets-webhook", "vault"]
+        bound_service_account_namespaces: ["vault-infra", "vswh"]
         policies: ["allow_secrets", "allow_pki"]
         ttl: 1h
     secrets:
@@ -138,8 +138,8 @@ spec:
         - name: internal
           common_name: vault.vault-infra
         roles:
-        - name: jx
-          allowed_domains: localhost,pod,svc,jx
+        - name: vault-infra
+          allowed_domains: localhost,pod,svc,vault-infra
           allow_subdomains: true
           generate_lease: true
           ttl: 1m
