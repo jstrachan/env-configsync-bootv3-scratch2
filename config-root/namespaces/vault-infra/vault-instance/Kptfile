@@ -5,7 +5,7 @@ metadata:
 upstream:
     type: git
     git:
-        commit: 4cc6b80d49808060b1f06f530399b986ed344f23
+        commit: 26d4b383bf615fa9270ebc02ff566483b7713be1
         repo: https://github.com/jenkins-x/jxr-kube-resources
         directory: /jenkins-x/vault-instance
         ref: master
