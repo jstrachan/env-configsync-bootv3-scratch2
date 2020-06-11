@@ -1,0 +1,599 @@
+
+Showing logs for build [32mjstrachan-env-configsync-bootv3-gbfsf-1[0m stage [32mpr-checks[0m and container [32mstep-credential-initializer-m5q5p[0m
+{"level":"info","ts":1591880042.831076,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/refs/heads/0.8.0-ns-support: no such file or directory"}
+{"level":"info","ts":1591880042.831469,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mjstrachan-env-configsync-bootv3-gbfsf-1[0m stage [32mpr-checks[0m and container [32mstep-working-dir-initializer-lc497[0m
+{"level":"info","ts":1591880044.1079319,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1591880044.1089866,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+
+Showing logs for build [32mjstrachan-env-configsync-bootv3-gbfsf-1[0m stage [32mpr-checks[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mjstrachan-env-configsync-bootv3-gbfsf-1[0m stage [32mpr-checks[0m and container [32mstep-git-source-jstrachan-env-configsync-bootv3-gbfsf-89whh[0m
+{"level":"info","ts":1591880064.2250872,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/refs/heads/0.8.0-ns-support: no such file or directory"}
+{"level":"info","ts":1591880065.6026037,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/jstrachan/env-configsync-bootv3-scratch2.git @ master in path /workspace/source"}
+
+Showing logs for build [32mjstrachan-env-configsync-bootv3-gbfsf-1[0m stage [32mpr-checks[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:a563f4ba2c105f0be9d89cdbf562c43bea393759,42:d54a3eb68970bef14b94ed0cab67644df2f2001b
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git fetch origin --unshallow d54a3eb68970bef14b94ed0cab67644df2f2001b: a563f4ba2c105f0be9d89cdbf562c43bea393759:
+DEBUG: ran git fetch --unshallow origin d54a3eb68970bef14b94ed0cab67644df2f2001b: a563f4ba2c105f0be9d89cdbf562c43bea393759: in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git branch
+DEBUG: JX_LOG_LEVEL=error LC_ALL=C git checkout master
+DEBUG: ran git checkout master in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git reset --hard a563f4ba2c105f0be9d89cdbf562c43bea393759
+DEBUG: ran git reset --hard a563f4ba2c105f0be9d89cdbf562c43bea393759 in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git clean -fd .
+DEBUG: ran clean --force -d . in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git merge d54a3eb68970bef14b94ed0cab67644df2f2001b
+DEBUG: ran git merge d54a3eb68970bef14b94ed0cab67644df2f2001b in 
+DEBUG: JX_LOG_LEVEL=error LC_ALL=C git log --format=%H%x1f%an%x1f%ae%x1f%cn%x1f%ce%x1f%s%n%b%x1e a563f4ba2c105f0be9d89cdbf562c43bea393759..HEAD
+Merged SHA d54a3eb68970bef14b94ed0cab67644df2f2001b with commit message 'WIP: testing PR' into base branch master
+
+Showing logs for build [32mjstrachan-env-configsync-bootv3-gbfsf-1[0m stage [32mpr-checks[0m and container [32mstep-kubeval[0m
+WARN - Set to ignore missing schemas
+WARN - jenkins-x-crds/templates/apps-crd.yaml containing a CustomResourceDefinition (apps.jenkins.io) was not validated against a schema
+WARN - jenkins-x-crds/templates/buildpacks-crd.yaml containing a CustomResourceDefinition (buildpacks.jenkins.io) was not validated against a schema
+WARN - jenkins-x-crds/templates/commitstatuses-crd.yaml containing a CustomResourceDefinition (commitstatuses.jenkins.io) was not validated against a schema
+WARN - jenkins-x-crds/templates/environmentrolebindings-crd.yaml containing a CustomResourceDefinition (environmentrolebindings.jenkins.io) was not validated against a schema
+WARN - jenkins-x-crds/templates/environments-crd.yaml containing a CustomResourceDefinition (environments.jenkins.io) was not validated against a schema
+WARN - jenkins-x-crds/templates/extensions-crd.yaml containing a CustomResourceDefinition (extensions.jenkins.io) was not validated against a schema
+WARN - jenkins-x-crds/templates/facts-crd.yaml containing a CustomResourceDefinition (facts.jenkins.io) was not validated against a schema
+WARN - jenkins-x-crds/templates/gitservices-crd.yaml containing a CustomResourceDefinition (gitservices.jenkins.io) was not validated against a schema
+WARN - jenkins-x-crds/templates/pipelineactivities-crd.yaml containing a CustomResourceDefinition (pipelineactivities.jenkins.io) was not validated against a schema
+WARN - jenkins-x-crds/templates/pipelinestructures-crd.yaml containing a CustomResourceDefinition (pipelinestructures.jenkins.io) was not validated against a schema
+WARN - jenkins-x-crds/templates/plugins-crd.yaml containing a CustomResourceDefinition (plugins.jenkins.io) was not validated against a schema
+WARN - jenkins-x-crds/templates/releases-crd.yaml containing a CustomResourceDefinition (releases.jenkins.io) was not validated against a schema
+WARN - config-root/cluster/crds/jenkins-x-crds/schedulers-crd.yaml containing a CustomResourceDefinition (schedulers.jenkins.io) was not validated against a schema
+WARN - jenkins-x-crds/templates/sourcerepositories-crd.yaml containing a CustomResourceDefinition (sourcerepositories.jenkins.io) was not validated against a schema
+WARN - jenkins-x-crds/templates/sourcerepositorygroups-crd.yaml containing a CustomResourceDefinition (sourcerepositorygroups.jenkins.io) was not validated against a schema
+WARN - jenkins-x-crds/templates/teams-crd.yaml containing a CustomResourceDefinition (teams.jenkins.io) was not validated against a schema
+WARN - jenkins-x-crds/templates/users-crd.yaml containing a CustomResourceDefinition (users.jenkins.io) was not validated against a schema
+WARN - jenkins-x-crds/templates/workflows-crd.yaml containing a CustomResourceDefinition (workflows.jenkins.io) was not validated against a schema
+PASS - config-root/cluster/namespaces/**.yaml contains a valid Namespace (**)
+PASS - config-root/cluster/namespaces/myapps.yaml contains a valid Namespace (myapps)
+PASS - config-root/cluster/namespaces/nginx.yaml contains a valid Namespace (nginx)
+PASS - config-root/cluster/namespaces/vault-infra.yaml contains a valid Namespace (vault-infra)
+PASS - godemo48/templates/deployment.yaml contains a valid Deployment (myapps.godemo48-godemo48)
+PASS - config-root/namespaces/apps/godemo48/ingress.yaml contains a valid Ingress (myapps.godemo48)
+PASS - godemo48/templates/service.yaml contains a valid Service (myapps.godemo48)
+PASS - nodey460/templates/deployment.yaml contains a valid Deployment (myapps.nodey460-nodey460)
+PASS - config-root/namespaces/apps/nodey460/ingress.yaml contains a valid Ingress (myapps.nodey460)
+PASS - nodey460/templates/service.yaml contains a valid Service (myapps.nodey460)
+PASS - nodey471/templates/deployment.yaml contains a valid Deployment (myapps.nodey471-nodey471)
+PASS - config-root/namespaces/apps/nodey471/ingress.yaml contains a valid Ingress (myapps.nodey471)
+PASS - nodey471/templates/service.yaml contains a valid Service (myapps.nodey471)
+PASS - **/templates/clusterrole.yaml contains a valid ClusterRole (**-**)
+PASS - **/templates/clusterrolebinding.yaml contains a valid ClusterRoleBinding (**.**-**)
+PASS - **/templates/deployment.yaml contains a valid Deployment (**.**)
+WARN - **/templates/release.yaml containing a Release (**.**-2.0.1143) was not validated against a schema
+PASS - **/templates/role.yaml contains a valid Role (**.**)
+PASS - **/templates/rolebinding.yaml contains a valid RoleBinding (**.**)
+PASS - **/templates/serviceaccount.yaml contains a valid ServiceAccount (**.**)
+PASS - config-root/namespaces/**/**boot-helmfile-resources/700-chartmuseum-ing.yaml contains a valid Ingress (**.chartmuseum)
+PASS - config-root/namespaces/**/**boot-helmfile-resources/700-hook-ing.yaml contains a valid Ingress (**.hook)
+PASS - config-root/namespaces/**/**boot-helmfile-resources/700-nexus-ing.yaml contains a valid Ingress (**.nexus)
+WARN - **boot-helmfile-resources/templates/buildpacks.yaml containing a BuildPack (**.classic-workloads) was not validated against a schema
+WARN - **boot-helmfile-resources/templates/buildpacks.yaml containing a BuildPack (kubernetes-workloads) was not validated against a schema
+PASS - **boot-helmfile-resources/templates/committer-role.yaml contains a valid Role (**.committer)
+WARN - **boot-helmfile-resources/templates/default-scheduler.yaml containing a Scheduler (**.default) was not validated against a schema
+PASS - **boot-helmfile-resources/templates/docker-cfg-secret.yaml contains a valid Secret (**.jenkins-docker-cfg)
+WARN - **boot-helmfile-resources/templates/env-scheduler.yaml containing a Scheduler (**.environment) was not validated against a schema
+WARN - **boot-helmfile-resources/templates/environments.yaml containing a Environment (**.dev) was not validated against a schema
+PASS - **boot-helmfile-resources/templates/ingress-config-configmap.yaml contains a valid ConfigMap (**.ingress-config)
+PASS - **boot-helmfile-resources/templates/jenkins-x-devpod-config.yaml contains a valid ConfigMap (**.jenkins-x-devpod-config)
+PASS - **boot-helmfile-resources/templates/jenkins-x-docker-registry.yaml contains a valid ConfigMap (**.jenkins-x-docker-registry)
+PASS - **boot-helmfile-resources/templates/jenkins-x-extensions-config.yaml contains a valid ConfigMap (**.jenkins-x-extensions)
+PASS - **boot-helmfile-resources/templates/jenkins-x-pod-templates.yaml contains a valid ConfigMap (**.jenkins-x-pod-template-dlang)
+PASS - **boot-helmfile-resources/templates/jenkins-x-pod-templates.yaml contains a valid ConfigMap (jenkins-x-pod-template-go)
+PASS - **boot-helmfile-resources/templates/jenkins-x-pod-templates.yaml contains a valid ConfigMap (jenkins-x-pod-template-gradle)
+PASS - **boot-helmfile-resources/templates/jenkins-x-pod-templates.yaml contains a valid ConfigMap (jenkins-x-pod-template-**-base)
+PASS - **boot-helmfile-resources/templates/jenkins-x-pod-templates.yaml contains a valid ConfigMap (jenkins-x-pod-template-machine-learning)
+PASS - **boot-helmfile-resources/templates/jenkins-x-pod-templates.yaml contains a valid ConfigMap (jenkins-x-pod-template-machine-learning-gpu)
+PASS - **boot-helmfile-resources/templates/jenkins-x-pod-templates.yaml contains a valid ConfigMap (jenkins-x-pod-template-maven)
+PASS - **boot-helmfile-resources/templates/jenkins-x-pod-templates.yaml contains a valid ConfigMap (jenkins-x-pod-template-maven-graalvm)
+PASS - **boot-helmfile-resources/templates/jenkins-x-pod-templates.yaml contains a valid ConfigMap (jenkins-x-pod-template-maven-java11)
+PASS - **boot-helmfile-resources/templates/jenkins-x-pod-templates.yaml contains a valid ConfigMap (jenkins-x-pod-template-maven-nodejs)
+PASS - **boot-helmfile-resources/templates/jenkins-x-pod-templates.yaml contains a valid ConfigMap (jenkins-x-pod-template-newman)
+PASS - **boot-helmfile-resources/templates/jenkins-x-pod-templates.yaml contains a valid ConfigMap (jenkins-x-pod-template-nodejs)
+PASS - **boot-helmfile-resources/templates/jenkins-x-pod-templates.yaml contains a valid ConfigMap (jenkins-x-pod-template-nodejs10x)
+PASS - **boot-helmfile-resources/templates/jenkins-x-pod-templates.yaml contains a valid ConfigMap (jenkins-x-pod-template-nodejs12x)
+PASS - **boot-helmfile-resources/templates/jenkins-x-pod-templates.yaml contains a valid ConfigMap (jenkins-x-pod-template-nodejs8x)
+PASS - **boot-helmfile-resources/templates/jenkins-x-pod-templates.yaml contains a valid ConfigMap (jenkins-x-pod-template-packer)
+PASS - **boot-helmfile-resources/templates/jenkins-x-pod-templates.yaml contains a valid ConfigMap (jenkins-x-pod-template-promote)
+PASS - **boot-helmfile-resources/templates/jenkins-x-pod-templates.yaml contains a valid ConfigMap (jenkins-x-pod-template-python)
+PASS - **boot-helmfile-resources/templates/jenkins-x-pod-templates.yaml contains a valid ConfigMap (jenkins-x-pod-template-python2)
+PASS - **boot-helmfile-resources/templates/jenkins-x-pod-templates.yaml contains a valid ConfigMap (jenkins-x-pod-template-python37)
+PASS - **boot-helmfile-resources/templates/jenkins-x-pod-templates.yaml contains a valid ConfigMap (jenkins-x-pod-template-ruby)
+PASS - **boot-helmfile-resources/templates/jenkins-x-pod-templates.yaml contains a valid ConfigMap (jenkins-x-pod-template-rust)
+PASS - **boot-helmfile-resources/templates/jenkins-x-pod-templates.yaml contains a valid ConfigMap (jenkins-x-pod-template-scala)
+PASS - **boot-helmfile-resources/templates/jenkins-x-pod-templates.yaml contains a valid ConfigMap (jenkins-x-pod-template-swift)
+PASS - **boot-helmfile-resources/templates/jenkins-x-pod-templates.yaml contains a valid ConfigMap (jenkins-x-pod-template-terraform)
+PASS - **boot-helmfile-resources/templates/jenkins-x-pod-templates.yaml contains a valid ConfigMap (jenkins-x-pod-template-aws-cdk)
+PASS - **boot-helmfile-resources/templates/jenkins-x-pod-templates.yaml contains a valid ConfigMap (jenkins-x-pod-template-php5x)
+PASS - **boot-helmfile-resources/templates/jenkins-x-pod-templates.yaml contains a valid ConfigMap (jenkins-x-pod-template-php7x)
+PASS - **boot-helmfile-resources/templates/**-pipeline-activity-reporter-role.yaml contains a valid Role (**.**-pipeline-activity-updater)
+PASS - **boot-helmfile-resources/templates/**-view-role.yaml contains a valid Role (**.**-view)
+PASS - **boot-helmfile-resources/templates/maven-settings-secret.yaml contains a valid Secret (**.jenkins-maven-settings)
+PASS - **boot-helmfile-resources/templates/npm-token-secret.yaml contains a valid Secret (**.jenkins-npm-token)
+PASS - **boot-helmfile-resources/templates/owner-role.yaml contains a valid Role (**.owner)
+WARN - **boot-helmfile-resources/templates/pr-only-scheduler.yaml containing a Scheduler (**.pr-only) was not validated against a schema
+PASS - **boot-helmfile-resources/templates/release-gpg-secret.yaml contains a valid Secret (**.jenkins-release-gpg)
+WARN - **boot-helmfile-resources/templates/release-only-scheduler.yaml containing a Scheduler (**.release-only) was not validated against a schema
+WARN - **boot-helmfile-resources/templates/repositories.yaml containing a SourceRepository (**.jstrachan-env-configsync-bootv3-scratch2) was not validated against a schema
+PASS - **boot-helmfile-resources/templates/viewer-role.yaml contains a valid Role (**.viewer)
+PASS - lighthouse/templates/foghorn-deployment.yaml contains a valid Deployment (**.lighthouse-foghorn)
+PASS - lighthouse/templates/foghorn-rb.yaml contains a valid RoleBinding (**.lighthouse-foghorn)
+PASS - lighthouse/templates/foghorn-role.yaml contains a valid Role (**.lighthouse-foghorn)
+PASS - lighthouse/templates/foghorn-sa.yaml contains a valid ServiceAccount (**.lighthouse-foghorn)
+PASS - lighthouse/templates/gc-jobs-cj.yaml contains a valid CronJob (**.lighthouse-gc-jobs)
+PASS - lighthouse/templates/gc-jobs-rb.yaml contains a valid RoleBinding (**.lighthouse-gc-jobs)
+PASS - lighthouse/templates/gc-jobs-role.yaml contains a valid Role (**.lighthouse-gc-jobs)
+PASS - lighthouse/templates/gc-jobs-sa.yaml contains a valid ServiceAccount (**.lighthouse-gc-jobs)
+PASS - lighthouse/templates/hmacsecret.yaml contains a valid Secret (**.lighthouse-hmac-token)
+PASS - lighthouse/templates/keeper-deployment.yaml contains a valid Deployment (**.lighthouse-keeper)
+PASS - lighthouse/templates/keeper-rb.yaml contains a valid RoleBinding (**.lighthouse-keeper)
+PASS - lighthouse/templates/keeper-role.yaml contains a valid Role (**.lighthouse-keeper)
+PASS - lighthouse/templates/keeper-sa.yaml contains a valid ServiceAccount (**.lighthouse-keeper)
+PASS - lighthouse/templates/keeper-service.yaml contains a valid Service (**.lighthouse-keeper)
+WARN - lighthouse/templates/lighthousejobs-crd.yaml containing a CustomResourceDefinition (**.lighthousejobs.lighthouse.jenkins.io) was not validated against a schema
+PASS - lighthouse/templates/oauthsecret.yaml contains a valid Secret (**.lighthouse-oauth-token)
+PASS - lighthouse/templates/webhooks-deployment.yaml contains a valid Deployment (**.lighthouse-webhooks)
+PASS - lighthouse/templates/webhooks-rb.yaml contains a valid RoleBinding (**.lighthouse-webhooks)
+PASS - lighthouse/templates/webhooks-role.yaml contains a valid Role (**.lighthouse-webhooks)
+PASS - lighthouse/templates/webhooks-sa.yaml contains a valid ServiceAccount (**.lighthouse-webhooks)
+PASS - lighthouse/templates/webhooks-service.yaml contains a valid Service (**.hook)
+PASS - config-root/namespaces/**/lighthouse-config/config-cm.yaml contains a valid ConfigMap (**.config)
+PASS - config-root/namespaces/**/lighthouse-config/**-install-config-cm.yaml contains a valid ConfigMap (**.**-install-config)
+PASS - config-root/namespaces/**/lighthouse-config/plugins-cm.yaml contains a valid ConfigMap (**.plugins)
+PASS - wave/templates/clusterrole.yaml contains a valid ClusterRole (pusher-wave)
+PASS - wave/templates/clusterrolebinding.yaml contains a valid ClusterRoleBinding (pusher-wave)
+PASS - wave/templates/deployment.yaml contains a valid Deployment (**.pusher-wave)
+PASS - wave/templates/serviceaccount.yaml contains a valid ServiceAccount (**.pusher-wave)
+WARN - config-root/namespaces/**/secrets/**-pipeline-git-ext-secret.yaml containing a ExternalSecret (**.**-pipeline-git-github-github) was not validated against a schema
+PASS - config-root/namespaces/**/secrets/**-pipeline-git-secret.yaml contains a valid Secret (**.**-pipeline-git-github-github)
+WARN - config-root/namespaces/**/secrets/lighthouse-hmac-ext-secret.yaml containing a ExternalSecret (**.lighthouse-hmac-token) was not validated against a schema
+WARN - config-root/namespaces/**/secrets/lighthouse-oauth-token-ext-secret.yaml containing a ExternalSecret (**.lighthouse-oauth-token) was not validated against a schema
+WARN - config-root/namespaces/**/secrets/tekton-git-token-ext-secret.yaml containing a ExternalSecret (**.tekton-git-token) was not validated against a schema
+PASS - tekton/templates/101-podsecuritypolicy.yaml contains a valid PodSecurityPolicy (**.tekton-pipelines)
+PASS - tekton/templates/200-clusterrole.yaml contains a valid ClusterRole (tekton-pipelines)
+PASS - tekton/templates/200-clusterrolebinding.yaml contains a valid ClusterRoleBinding (tekton-pipelines-**)
+PASS - tekton/templates/250-serviceaccount.yaml contains a valid ServiceAccount (**.tekton-pipelines)
+PASS - tekton/templates/251-bot-serviceaccount.yaml contains a valid ServiceAccount (**.tekton-bot)
+WARN - tekton/templates/300-clustertask.yaml containing a CustomResourceDefinition (**.clustertasks.tekton.dev) was not validated against a schema
+WARN - tekton/templates/300-condition.yaml containing a CustomResourceDefinition (**.conditions.tekton.dev) was not validated against a schema
+WARN - tekton/templates/300-imagecache.yaml containing a CustomResourceDefinition (**.images.caching.internal.knative.dev) was not validated against a schema
+WARN - tekton/templates/300-pipeline.yaml containing a CustomResourceDefinition (**.pipelines.tekton.dev) was not validated against a schema
+WARN - tekton/templates/300-pipelinerun.yaml containing a CustomResourceDefinition (**.pipelineruns.tekton.dev) was not validated against a schema
+WARN - tekton/templates/300-resource.yaml containing a CustomResourceDefinition (**.pipelineresources.tekton.dev) was not validated against a schema
+WARN - tekton/templates/300-task.yaml containing a CustomResourceDefinition (**.tasks.tekton.dev) was not validated against a schema
+WARN - tekton/templates/300-taskrun.yaml containing a CustomResourceDefinition (**.taskruns.tekton.dev) was not validated against a schema
+PASS - tekton/templates/400-controller-service.yaml contains a valid Service (**.tekton-pipelines-controller)
+PASS - tekton/templates/400-webhook-service.yaml contains a valid Service (**.tekton-pipelines-webhook)
+PASS - tekton/templates/build-bot-clusterrole.yaml contains a valid ClusterRole (tekton-bot)
+PASS - tekton/templates/build-bot-clusterrolebinding.yaml contains a valid ClusterRoleBinding (tekton-bot-**)
+PASS - tekton/templates/build-bot-role.yaml contains a valid Role (**.tekton-bot)
+PASS - tekton/templates/build-bot-rolebinding.yaml contains a valid RoleBinding (**.tekton-bot)
+PASS - tekton/templates/clusterrole-aggregate-edit.yaml contains a valid ClusterRole (tekton-aggregate-edit)
+PASS - tekton/templates/clusterrole-aggregate-view.yaml contains a valid ClusterRole (tekton-aggregate-view)
+PASS - tekton/templates/config-artifact-bucket.yaml contains a valid ConfigMap (**.config-artifact-bucket)
+PASS - tekton/templates/config-artifact-pvc.yaml contains a valid ConfigMap (**.config-artifact-pvc)
+PASS - tekton/templates/config-defaults.yaml contains a valid ConfigMap (**.config-defaults)
+PASS - tekton/templates/config-entrypoint.yaml contains a valid ConfigMap (**.config-entrypoint)
+PASS - tekton/templates/config-logging.yaml contains a valid ConfigMap (**.config-logging)
+PASS - tekton/templates/config-observability.yaml contains a valid ConfigMap (**.config-observability)
+PASS - tekton/templates/controller.yaml contains a valid Deployment (**.tekton-pipelines-controller)
+PASS - tekton/templates/webhook.yaml contains a valid Deployment (**.tekton-pipelines-webhook)
+PASS - nginx-ingress/templates/clusterrole.yaml contains a valid ClusterRole (nginx-ingress)
+PASS - nginx-ingress/templates/clusterrolebinding.yaml contains a valid ClusterRoleBinding (nginx-ingress)
+PASS - nginx-ingress/templates/controller-deployment.yaml contains a valid Deployment (nginx.nginx-ingress-controller)
+PASS - nginx-ingress/templates/controller-role.yaml contains a valid Role (nginx.nginx-ingress)
+PASS - nginx-ingress/templates/controller-rolebinding.yaml contains a valid RoleBinding (nginx.nginx-ingress)
+PASS - nginx-ingress/templates/controller-service.yaml contains a valid Service (nginx.nginx-ingress-controller)
+PASS - nginx-ingress/templates/controller-serviceaccount.yaml contains a valid ServiceAccount (nginx.nginx-ingress)
+PASS - nginx-ingress/templates/default-backend-deployment.yaml contains a valid Deployment (nginx.nginx-ingress-default-backend)
+PASS - nginx-ingress/templates/default-backend-service.yaml contains a valid Service (nginx.nginx-ingress-default-backend)
+PASS - nginx-ingress/templates/default-backend-serviceaccount.yaml contains a valid ServiceAccount (nginx.nginx-ingress-backend)
+PASS - kubernetes-external-secrets/templates/deployment.yaml contains a valid Deployment (vault-infra.kubernetes-external-secrets)
+WARN - kubernetes-external-secrets/crds/kubernetes-client.io_externalsecrets_crd.yaml containing a CustomResourceDefinition (externalsecrets.kubernetes-client.io) was not validated against a schema
+PASS - kubernetes-external-secrets/templates/rbac.yaml contains a valid ClusterRole (kubernetes-external-secrets)
+PASS - kubernetes-external-secrets/templates/rbac.yaml contains a valid ClusterRoleBinding (kubernetes-external-secrets)
+PASS - kubernetes-external-secrets/templates/rbac.yaml contains a valid ClusterRoleBinding (kubernetes-external-secrets-auth)
+PASS - kubernetes-external-secrets/templates/service.yaml contains a valid Service (vault-infra.kubernetes-external-secrets)
+PASS - kubernetes-external-secrets/templates/serviceaccount.yaml contains a valid ServiceAccount (vault-infra.kubernetes-external-secrets)
+PASS - config-root/namespaces/vault-infra/vault-instance/cluster-role-binding.yaml contains a valid ClusterRoleBinding (vault-auth-delegator)
+WARN - config-root/namespaces/vault-infra/vault-instance/cr.yaml containing a Vault (vault-infra.vault) was not validated against a schema
+PASS - config-root/namespaces/vault-infra/vault-instance/pvc.yaml contains a valid PersistentVolumeClaim (vault-infra.vault-file)
+PASS - config-root/namespaces/vault-infra/vault-instance/role-binding.yaml contains a valid RoleBinding (vault-infra.vault-secrets)
+PASS - config-root/namespaces/vault-infra/vault-instance/role.yaml contains a valid Role (vault-infra.vault-secrets)
+PASS - config-root/namespaces/vault-infra/vault-instance/sa.yaml contains a valid ServiceAccount (vault-infra.vault)
+WARN - vault-operator/crds/crd.yaml containing a CustomResourceDefinition (vaults.vault.banzaicloud.com) was not validated against a schema
+PASS - vault-operator/templates/deployment.yaml contains a valid Deployment (vault-infra.vault-operator)
+PASS - vault-operator/templates/role.yaml contains a valid ClusterRole (vault-operator)
+PASS - vault-operator/templates/rolebinding.yaml contains a valid ClusterRoleBinding (vault-operator)
+PASS - vault-operator/templates/sa.yaml contains a valid ServiceAccount (vault-infra.vault-operator)
+PASS - vault-operator/templates/service.yaml contains a valid Service (vault-infra.vault-operator)
+
+Showing logs for build [32mjstrachan-env-configsync-bootv3-gbfsf-1[0m stage [32mpr-checks[0m and container [32mstep-nomos-vet[0m
+Error: errors for cluster "defaultcluster": 18 error(s)
+
+
+[1] KNV1045: Configs with "status" specified are not allowed. To fix, either remove the config or remove the "status" field in the config:
+
+metadata.name: apps.jenkins.io
+group: apiextensions.k8s.io
+version: v1beta1
+kind: CustomResourceDefinition
+
+For more information, see https://cloud.google.com/anthos-config-management/docs/reference/errors#knv1045
+
+
+[2] KNV1045: Configs with "status" specified are not allowed. To fix, either remove the config or remove the "status" field in the config:
+
+metadata.name: buildpacks.jenkins.io
+group: apiextensions.k8s.io
+version: v1beta1
+kind: CustomResourceDefinition
+
+For more information, see https://cloud.google.com/anthos-config-management/docs/reference/errors#knv1045
+
+
+[3] KNV1045: Configs with "status" specified are not allowed. To fix, either remove the config or remove the "status" field in the config:
+
+metadata.name: commitstatuses.jenkins.io
+group: apiextensions.k8s.io
+version: v1beta1
+kind: CustomResourceDefinition
+
+For more information, see https://cloud.google.com/anthos-config-management/docs/reference/errors#knv1045
+
+
+[4] KNV1045: Configs with "status" specified are not allowed. To fix, either remove the config or remove the "status" field in the config:
+
+metadata.name: environmentrolebindings.jenkins.io
+group: apiextensions.k8s.io
+version: v1beta1
+kind: CustomResourceDefinition
+
+For more information, see https://cloud.google.com/anthos-config-management/docs/reference/errors#knv1045
+
+
+[5] KNV1045: Configs with "status" specified are not allowed. To fix, either remove the config or remove the "status" field in the config:
+
+metadata.name: environments.jenkins.io
+group: apiextensions.k8s.io
+version: v1beta1
+kind: CustomResourceDefinition
+
+For more information, see https://cloud.google.com/anthos-config-management/docs/reference/errors#knv1045
+
+
+[6] KNV1045: Configs with "status" specified are not allowed. To fix, either remove the config or remove the "status" field in the config:
+
+metadata.name: extensions.jenkins.io
+group: apiextensions.k8s.io
+version: v1beta1
+kind: CustomResourceDefinition
+
+For more information, see https://cloud.google.com/anthos-config-management/docs/reference/errors#knv1045
+
+
+[7] KNV1045: Configs with "status" specified are not allowed. To fix, either remove the config or remove the "status" field in the config:
+
+metadata.name: facts.jenkins.io
+group: apiextensions.k8s.io
+version: v1beta1
+kind: CustomResourceDefinition
+
+For more information, see https://cloud.google.com/anthos-config-management/docs/reference/errors#knv1045
+
+
+[8] KNV1045: Configs with "status" specified are not allowed. To fix, either remove the config or remove the "status" field in the config:
+
+metadata.name: gitservices.jenkins.io
+group: apiextensions.k8s.io
+version: v1beta1
+kind: CustomResourceDefinition
+
+For more information, see https://cloud.google.com/anthos-config-management/docs/reference/errors#knv1045
+
+
+[9] KNV1045: Configs with "status" specified are not allowed. To fix, either remove the config or remove the "status" field in the config:
+
+metadata.name: pipelineactivities.jenkins.io
+group: apiextensions.k8s.io
+version: v1beta1
+kind: CustomResourceDefinition
+
+For more information, see https://cloud.google.com/anthos-config-management/docs/reference/errors#knv1045
+
+
+[10] KNV1045: Configs with "status" specified are not allowed. To fix, either remove the config or remove the "status" field in the config:
+
+metadata.name: pipelinestructures.jenkins.io
+group: apiextensions.k8s.io
+version: v1beta1
+kind: CustomResourceDefinition
+
+For more information, see https://cloud.google.com/anthos-config-management/docs/reference/errors#knv1045
+
+
+[11] KNV1045: Configs with "status" specified are not allowed. To fix, either remove the config or remove the "status" field in the config:
+
+metadata.name: plugins.jenkins.io
+group: apiextensions.k8s.io
+version: v1beta1
+kind: CustomResourceDefinition
+
+For more information, see https://cloud.google.com/anthos-config-management/docs/reference/errors#knv1045
+
+
+[12] KNV1045: Configs with "status" specified are not allowed. To fix, either remove the config or remove the "status" field in the config:
+
+metadata.name: releases.jenkins.io
+group: apiextensions.k8s.io
+version: v1beta1
+kind: CustomResourceDefinition
+
+For more information, see https://cloud.google.com/anthos-config-management/docs/reference/errors#knv1045
+
+
+[13] KNV1045: Configs with "status" specified are not allowed. To fix, either remove the config or remove the "status" field in the config:
+
+metadata.name: schedulers.jenkins.io
+group: apiextensions.k8s.io
+version: v1beta1
+kind: CustomResourceDefinition
+
+For more information, see https://cloud.google.com/anthos-config-management/docs/reference/errors#knv1045
+
+
+[14] KNV1045: Configs with "status" specified are not allowed. To fix, either remove the config or remove the "status" field in the config:
+
+metadata.name: sourcerepositories.jenkins.io
+group: apiextensions.k8s.io
+version: v1beta1
+kind: CustomResourceDefinition
+
+For more information, see https://cloud.google.com/anthos-config-management/docs/reference/errors#knv1045
+
+
+[15] KNV1045: Configs with "status" specified are not allowed. To fix, either remove the config or remove the "status" field in the config:
+
+metadata.name: sourcerepositorygroups.jenkins.io
+group: apiextensions.k8s.io
+version: v1beta1
+kind: CustomResourceDefinition
+
+For more information, see https://cloud.google.com/anthos-config-management/docs/reference/errors#knv1045
+
+
+[16] KNV1045: Configs with "status" specified are not allowed. To fix, either remove the config or remove the "status" field in the config:
+
+metadata.name: teams.jenkins.io
+group: apiextensions.k8s.io
+version: v1beta1
+kind: CustomResourceDefinition
+
+For more information, see https://cloud.google.com/anthos-config-management/docs/reference/errors#knv1045
+
+
+[17] KNV1045: Configs with "status" specified are not allowed. To fix, either remove the config or remove the "status" field in the config:
+
+metadata.name: users.jenkins.io
+group: apiextensions.k8s.io
+version: v1beta1
+kind: CustomResourceDefinition
+
+For more information, see https://cloud.google.com/anthos-config-management/docs/reference/errors#knv1045
+
+
+[18] KNV1045: Configs with "status" specified are not allowed. To fix, either remove the config or remove the "status" field in the config:
+
+metadata.name: workflows.jenkins.io
+group: apiextensions.k8s.io
+version: v1beta1
+kind: CustomResourceDefinition
+
+For more information, see https://cloud.google.com/anthos-config-management/docs/reference/errors#knv1045
+
+
+Usage:
+  nomos vet [flags]
+
+Examples:
+  nomos vet
+  nomos vet --path=my/directory
+  nomos vet --path=/path/to/my/directory
+
+Flags:
+      --clusters strings       Accepts a comma-separated list of Cluster names to use in multi-cluster commands. Defaults to all clusters. Use "" for no clusters.
+  -h, --help                   help for vet
+      --no-api-server-check    If true, disables talking to the API Server for discovery.
+      --path string            Root directory to use as a Anthos Configuration Management repository. (default ".")
+      --source-format string   If "hierarchy", validate as a Anthos Configuration Management repository. If "unstructured", validate as an unstructured repository. (default "hierarchy")
+
+errors for cluster "defaultcluster": 18 error(s)
+
+
+[1] KNV1045: Configs with "status" specified are not allowed. To fix, either remove the config or remove the "status" field in the config:
+
+metadata.name: apps.jenkins.io
+group: apiextensions.k8s.io
+version: v1beta1
+kind: CustomResourceDefinition
+
+For more information, see https://cloud.google.com/anthos-config-management/docs/reference/errors#knv1045
+
+
+[2] KNV1045: Configs with "status" specified are not allowed. To fix, either remove the config or remove the "status" field in the config:
+
+metadata.name: buildpacks.jenkins.io
+group: apiextensions.k8s.io
+version: v1beta1
+kind: CustomResourceDefinition
+
+For more information, see https://cloud.google.com/anthos-config-management/docs/reference/errors#knv1045
+
+
+[3] KNV1045: Configs with "status" specified are not allowed. To fix, either remove the config or remove the "status" field in the config:
+
+metadata.name: commitstatuses.jenkins.io
+group: apiextensions.k8s.io
+version: v1beta1
+kind: CustomResourceDefinition
+
+For more information, see https://cloud.google.com/anthos-config-management/docs/reference/errors#knv1045
+
+
+[4] KNV1045: Configs with "status" specified are not allowed. To fix, either remove the config or remove the "status" field in the config:
+
+metadata.name: environmentrolebindings.jenkins.io
+group: apiextensions.k8s.io
+version: v1beta1
+kind: CustomResourceDefinition
+
+For more information, see https://cloud.google.com/anthos-config-management/docs/reference/errors#knv1045
+
+
+[5] KNV1045: Configs with "status" specified are not allowed. To fix, either remove the config or remove the "status" field in the config:
+
+metadata.name: environments.jenkins.io
+group: apiextensions.k8s.io
+version: v1beta1
+kind: CustomResourceDefinition
+
+For more information, see https://cloud.google.com/anthos-config-management/docs/reference/errors#knv1045
+
+
+[6] KNV1045: Configs with "status" specified are not allowed. To fix, either remove the config or remove the "status" field in the config:
+
+metadata.name: extensions.jenkins.io
+group: apiextensions.k8s.io
+version: v1beta1
+kind: CustomResourceDefinition
+
+For more information, see https://cloud.google.com/anthos-config-management/docs/reference/errors#knv1045
+
+
+[7] KNV1045: Configs with "status" specified are not allowed. To fix, either remove the config or remove the "status" field in the config:
+
+metadata.name: facts.jenkins.io
+group: apiextensions.k8s.io
+version: v1beta1
+kind: CustomResourceDefinition
+
+For more information, see https://cloud.google.com/anthos-config-management/docs/reference/errors#knv1045
+
+
+[8] KNV1045: Configs with "status" specified are not allowed. To fix, either remove the config or remove the "status" field in the config:
+
+metadata.name: gitservices.jenkins.io
+group: apiextensions.k8s.io
+version: v1beta1
+kind: CustomResourceDefinition
+
+For more information, see https://cloud.google.com/anthos-config-management/docs/reference/errors#knv1045
+
+
+[9] KNV1045: Configs with "status" specified are not allowed. To fix, either remove the config or remove the "status" field in the config:
+
+metadata.name: pipelineactivities.jenkins.io
+group: apiextensions.k8s.io
+version: v1beta1
+kind: CustomResourceDefinition
+
+For more information, see https://cloud.google.com/anthos-config-management/docs/reference/errors#knv1045
+
+
+[10] KNV1045: Configs with "status" specified are not allowed. To fix, either remove the config or remove the "status" field in the config:
+
+metadata.name: pipelinestructures.jenkins.io
+group: apiextensions.k8s.io
+version: v1beta1
+kind: CustomResourceDefinition
+
+For more information, see https://cloud.google.com/anthos-config-management/docs/reference/errors#knv1045
+
+
+[11] KNV1045: Configs with "status" specified are not allowed. To fix, either remove the config or remove the "status" field in the config:
+
+metadata.name: plugins.jenkins.io
+group: apiextensions.k8s.io
+version: v1beta1
+kind: CustomResourceDefinition
+
+For more information, see https://cloud.google.com/anthos-config-management/docs/reference/errors#knv1045
+
+
+[12] KNV1045: Configs with "status" specified are not allowed. To fix, either remove the config or remove the "status" field in the config:
+
+metadata.name: releases.jenkins.io
+group: apiextensions.k8s.io
+version: v1beta1
+kind: CustomResourceDefinition
+
+For more information, see https://cloud.google.com/anthos-config-management/docs/reference/errors#knv1045
+
+
+[13] KNV1045: Configs with "status" specified are not allowed. To fix, either remove the config or remove the "status" field in the config:
+
+metadata.name: schedulers.jenkins.io
+group: apiextensions.k8s.io
+version: v1beta1
+kind: CustomResourceDefinition
+
+For more information, see https://cloud.google.com/anthos-config-management/docs/reference/errors#knv1045
+
+
+[14] KNV1045: Configs with "status" specified are not allowed. To fix, either remove the config or remove the "status" field in the config:
+
+metadata.name: sourcerepositories.jenkins.io
+group: apiextensions.k8s.io
+version: v1beta1
+kind: CustomResourceDefinition
+
+For more information, see https://cloud.google.com/anthos-config-management/docs/reference/errors#knv1045
+
+
+[15] KNV1045: Configs with "status" specified are not allowed. To fix, either remove the config or remove the "status" field in the config:
+
+metadata.name: sourcerepositorygroups.jenkins.io
+group: apiextensions.k8s.io
+version: v1beta1
+kind: CustomResourceDefinition
+
+For more information, see https://cloud.google.com/anthos-config-management/docs/reference/errors#knv1045
+
+
+[16] KNV1045: Configs with "status" specified are not allowed. To fix, either remove the config or remove the "status" field in the config:
+
+metadata.name: teams.jenkins.io
+group: apiextensions.k8s.io
+version: v1beta1
+kind: CustomResourceDefinition
+
+For more information, see https://cloud.google.com/anthos-config-management/docs/reference/errors#knv1045
+
+
+[17] KNV1045: Configs with "status" specified are not allowed. To fix, either remove the config or remove the "status" field in the config:
+
+metadata.name: users.jenkins.io
+group: apiextensions.k8s.io
+version: v1beta1
+kind: CustomResourceDefinition
+
+For more information, see https://cloud.google.com/anthos-config-management/docs/reference/errors#knv1045
+
+
+[18] KNV1045: Configs with "status" specified are not allowed. To fix, either remove the config or remove the "status" field in the config:
+
+metadata.name: workflows.jenkins.io
+group: apiextensions.k8s.io
+version: v1beta1
+kind: CustomResourceDefinition
+
+For more information, see https://cloud.google.com/anthos-config-management/docs/reference/errors#knv1045
+
+
+[31m
+Pipeline failed on stage 'pr-checks' : container 'step-nomos-vet'. The execution of the pipeline has stopped.[0m
