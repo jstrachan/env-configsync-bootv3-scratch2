@@ -1,0 +1,204 @@
+
+Showing logs for build [32mjstrachan-env-configsync-bootv3-zqqxl-8[0m stage [32mrelease[0m and container [32mstep-credential-initializer-x8m77[0m
+{"level":"info","ts":1591879643.7821407,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/refs/heads/0.8.0-ns-support: no such file or directory"}
+{"level":"info","ts":1591879643.8061404,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mjstrachan-env-configsync-bootv3-zqqxl-8[0m stage [32mrelease[0m and container [32mstep-working-dir-initializer-xmvsm[0m
+{"level":"info","ts":1591879645.7119038,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1591879645.8075628,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+
+Showing logs for build [32mjstrachan-env-configsync-bootv3-zqqxl-8[0m stage [32mrelease[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mjstrachan-env-configsync-bootv3-zqqxl-8[0m stage [32mrelease[0m and container [32mstep-git-source-jstrachan-env-configsync-bootv3-zqqxl-nnm92[0m
+{"level":"info","ts":1591879725.100178,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/refs/heads/0.8.0-ns-support: no such file or directory"}
+{"level":"info","ts":1591879727.8408053,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/jstrachan/env-configsync-bootv3-scratch2.git @ v0.0.5 in path /workspace/source"}
+
+Showing logs for build [32mjstrachan-env-configsync-bootv3-zqqxl-8[0m stage [32mrelease[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:a563f4ba2c105f0be9d89cdbf562c43bea393759
+WARNING: no SHAs to merge, falling back to initial cloned commit
+
+Showing logs for build [32mjstrachan-env-configsync-bootv3-zqqxl-8[0m stage [32mrelease[0m and container [32mstep-kubectl-apply[0m
+customresourcedefinition.apiextensions.k8s.io/apps.jenkins.io configured
+customresourcedefinition.apiextensions.k8s.io/buildpacks.jenkins.io configured
+customresourcedefinition.apiextensions.k8s.io/commitstatuses.jenkins.io configured
+customresourcedefinition.apiextensions.k8s.io/environmentrolebindings.jenkins.io configured
+customresourcedefinition.apiextensions.k8s.io/environments.jenkins.io configured
+customresourcedefinition.apiextensions.k8s.io/extensions.jenkins.io configured
+customresourcedefinition.apiextensions.k8s.io/facts.jenkins.io configured
+customresourcedefinition.apiextensions.k8s.io/gitservices.jenkins.io configured
+customresourcedefinition.apiextensions.k8s.io/pipelineactivities.jenkins.io configured
+customresourcedefinition.apiextensions.k8s.io/pipelinestructures.jenkins.io configured
+customresourcedefinition.apiextensions.k8s.io/plugins.jenkins.io configured
+customresourcedefinition.apiextensions.k8s.io/releases.jenkins.io configured
+customresourcedefinition.apiextensions.k8s.io/schedulers.jenkins.io configured
+customresourcedefinition.apiextensions.k8s.io/sourcerepositories.jenkins.io configured
+customresourcedefinition.apiextensions.k8s.io/sourcerepositorygroups.jenkins.io configured
+customresourcedefinition.apiextensions.k8s.io/teams.jenkins.io configured
+customresourcedefinition.apiextensions.k8s.io/users.jenkins.io configured
+customresourcedefinition.apiextensions.k8s.io/workflows.jenkins.io configured
+namespace/** unchanged
+namespace/myapps unchanged
+namespace/nginx unchanged
+namespace/vault-infra unchanged
+deployment.apps/godemo48-godemo48 configured
+ingress.extensions/godemo48 configured
+service/godemo48 unchanged
+deployment.apps/nodey460-nodey460 configured
+ingress.extensions/nodey460 configured
+service/nodey460 unchanged
+deployment.apps/nodey471-nodey471 configured
+ingress.extensions/nodey471 configured
+service/nodey471 unchanged
+clusterrole.rbac.authorization.k8s.io/**-** created
+clusterrolebinding.rbac.authorization.k8s.io/**-** created
+deployment.apps/** created
+release.jenkins.io/**-2.0.1143 created
+role.rbac.authorization.k8s.io/** created
+rolebinding.rbac.authorization.k8s.io/** created
+serviceaccount/** created
+ingress.networking.k8s.io/chartmuseum configured
+ingress.networking.k8s.io/hook configured
+ingress.networking.k8s.io/nexus unchanged
+buildpack.jenkins.io/classic-workloads unchanged
+buildpack.jenkins.io/kubernetes-workloads unchanged
+role.rbac.authorization.k8s.io/committer unchanged
+scheduler.jenkins.io/default unchanged
+secret/jenkins-docker-cfg unchanged
+scheduler.jenkins.io/environment unchanged
+environment.jenkins.io/dev unchanged
+configmap/ingress-config unchanged
+configmap/jenkins-x-devpod-config unchanged
+configmap/jenkins-x-docker-registry unchanged
+configmap/jenkins-x-extensions unchanged
+configmap/jenkins-x-pod-template-dlang unchanged
+configmap/jenkins-x-pod-template-go unchanged
+configmap/jenkins-x-pod-template-gradle unchanged
+configmap/jenkins-x-pod-template-**-base unchanged
+configmap/jenkins-x-pod-template-machine-learning unchanged
+configmap/jenkins-x-pod-template-machine-learning-gpu unchanged
+configmap/jenkins-x-pod-template-maven unchanged
+configmap/jenkins-x-pod-template-maven-graalvm unchanged
+configmap/jenkins-x-pod-template-maven-java11 unchanged
+configmap/jenkins-x-pod-template-maven-nodejs unchanged
+configmap/jenkins-x-pod-template-newman unchanged
+configmap/jenkins-x-pod-template-nodejs unchanged
+configmap/jenkins-x-pod-template-nodejs10x unchanged
+configmap/jenkins-x-pod-template-nodejs12x unchanged
+configmap/jenkins-x-pod-template-nodejs8x unchanged
+configmap/jenkins-x-pod-template-packer unchanged
+configmap/jenkins-x-pod-template-promote unchanged
+configmap/jenkins-x-pod-template-python unchanged
+configmap/jenkins-x-pod-template-python2 unchanged
+configmap/jenkins-x-pod-template-python37 unchanged
+configmap/jenkins-x-pod-template-ruby unchanged
+configmap/jenkins-x-pod-template-rust unchanged
+configmap/jenkins-x-pod-template-scala unchanged
+configmap/jenkins-x-pod-template-swift unchanged
+configmap/jenkins-x-pod-template-terraform unchanged
+configmap/jenkins-x-pod-template-aws-cdk unchanged
+configmap/jenkins-x-pod-template-php5x unchanged
+configmap/jenkins-x-pod-template-php7x unchanged
+role.rbac.authorization.k8s.io/**-pipeline-activity-updater unchanged
+role.rbac.authorization.k8s.io/**-view unchanged
+secret/jenkins-maven-settings unchanged
+secret/jenkins-npm-token unchanged
+role.rbac.authorization.k8s.io/owner unchanged
+scheduler.jenkins.io/pr-only unchanged
+secret/jenkins-release-gpg unchanged
+scheduler.jenkins.io/release-only unchanged
+sourcerepository.jenkins.io/jstrachan-env-configsync-bootv3-scratch2 configured
+role.rbac.authorization.k8s.io/viewer unchanged
+deployment.apps/lighthouse-foghorn configured
+rolebinding.rbac.authorization.k8s.io/lighthouse-foghorn unchanged
+role.rbac.authorization.k8s.io/lighthouse-foghorn unchanged
+serviceaccount/lighthouse-foghorn unchanged
+cronjob.batch/lighthouse-gc-jobs unchanged
+rolebinding.rbac.authorization.k8s.io/lighthouse-gc-jobs unchanged
+role.rbac.authorization.k8s.io/lighthouse-gc-jobs unchanged
+serviceaccount/lighthouse-gc-jobs unchanged
+Warning: kubectl apply should be used on resource created by either kubectl create --save-config or kubectl apply
+secret/lighthouse-hmac-token configured
+deployment.apps/lighthouse-keeper unchanged
+rolebinding.rbac.authorization.k8s.io/lighthouse-keeper unchanged
+role.rbac.authorization.k8s.io/lighthouse-keeper unchanged
+serviceaccount/lighthouse-keeper unchanged
+service/lighthouse-keeper unchanged
+customresourcedefinition.apiextensions.k8s.io/lighthousejobs.lighthouse.jenkins.io unchanged
+Warning: kubectl apply should be used on resource created by either kubectl create --save-config or kubectl apply
+secret/lighthouse-oauth-token configured
+deployment.apps/lighthouse-webhooks unchanged
+rolebinding.rbac.authorization.k8s.io/lighthouse-webhooks unchanged
+role.rbac.authorization.k8s.io/lighthouse-webhooks unchanged
+serviceaccount/lighthouse-webhooks unchanged
+service/hook unchanged
+configmap/config unchanged
+configmap/**-install-config unchanged
+configmap/plugins unchanged
+clusterrole.rbac.authorization.k8s.io/pusher-wave unchanged
+clusterrolebinding.rbac.authorization.k8s.io/pusher-wave unchanged
+deployment.apps/pusher-wave configured
+serviceaccount/pusher-wave unchanged
+externalsecret.kubernetes-client.io/**-pipeline-git-github-github unchanged
+Warning: kubectl apply should be used on resource created by either kubectl create --save-config or kubectl apply
+secret/**-pipeline-git-github-github configured
+externalsecret.kubernetes-client.io/lighthouse-hmac-token unchanged
+externalsecret.kubernetes-client.io/lighthouse-oauth-token unchanged
+externalsecret.kubernetes-client.io/tekton-git-token unchanged
+podsecuritypolicy.policy/tekton-pipelines configured
+clusterrole.rbac.authorization.k8s.io/tekton-pipelines unchanged
+clusterrolebinding.rbac.authorization.k8s.io/tekton-pipelines-** unchanged
+serviceaccount/tekton-pipelines unchanged
+serviceaccount/tekton-bot configured
+customresourcedefinition.apiextensions.k8s.io/clustertasks.tekton.dev unchanged
+customresourcedefinition.apiextensions.k8s.io/conditions.tekton.dev unchanged
+customresourcedefinition.apiextensions.k8s.io/images.caching.internal.knative.dev unchanged
+customresourcedefinition.apiextensions.k8s.io/pipelines.tekton.dev unchanged
+customresourcedefinition.apiextensions.k8s.io/pipelineruns.tekton.dev unchanged
+customresourcedefinition.apiextensions.k8s.io/pipelineresources.tekton.dev unchanged
+customresourcedefinition.apiextensions.k8s.io/tasks.tekton.dev unchanged
+customresourcedefinition.apiextensions.k8s.io/taskruns.tekton.dev unchanged
+service/tekton-pipelines-controller unchanged
+service/tekton-pipelines-webhook unchanged
+clusterrole.rbac.authorization.k8s.io/tekton-bot unchanged
+clusterrolebinding.rbac.authorization.k8s.io/tekton-bot-** unchanged
+role.rbac.authorization.k8s.io/tekton-bot unchanged
+rolebinding.rbac.authorization.k8s.io/tekton-bot unchanged
+clusterrole.rbac.authorization.k8s.io/tekton-aggregate-edit unchanged
+clusterrole.rbac.authorization.k8s.io/tekton-aggregate-view unchanged
+configmap/config-artifact-bucket configured
+configmap/config-artifact-pvc unchanged
+configmap/config-defaults unchanged
+configmap/config-entrypoint unchanged
+configmap/config-logging unchanged
+configmap/config-observability unchanged
+deployment.apps/tekton-pipelines-controller unchanged
+deployment.apps/tekton-pipelines-webhook unchanged
+clusterrole.rbac.authorization.k8s.io/nginx-ingress unchanged
+clusterrolebinding.rbac.authorization.k8s.io/nginx-ingress unchanged
+deployment.apps/nginx-ingress-controller configured
+role.rbac.authorization.k8s.io/nginx-ingress unchanged
+rolebinding.rbac.authorization.k8s.io/nginx-ingress unchanged
+service/nginx-ingress-controller unchanged
+serviceaccount/nginx-ingress unchanged
+deployment.apps/nginx-ingress-default-backend configured
+service/nginx-ingress-default-backend unchanged
+serviceaccount/nginx-ingress-backend unchanged
+deployment.apps/kubernetes-external-secrets unchanged
+customresourcedefinition.apiextensions.k8s.io/externalsecrets.kubernetes-client.io unchanged
+clusterrole.rbac.authorization.k8s.io/kubernetes-external-secrets unchanged
+clusterrolebinding.rbac.authorization.k8s.io/kubernetes-external-secrets unchanged
+clusterrolebinding.rbac.authorization.k8s.io/kubernetes-external-secrets-auth unchanged
+service/kubernetes-external-secrets unchanged
+serviceaccount/kubernetes-external-secrets unchanged
+clusterrolebinding.rbac.authorization.k8s.io/vault-auth-delegator unchanged
+vault.vault.banzaicloud.com/vault unchanged
+persistentvolumeclaim/vault-file unchanged
+rolebinding.rbac.authorization.k8s.io/vault-secrets unchanged
+role.rbac.authorization.k8s.io/vault-secrets unchanged
+serviceaccount/vault unchanged
+customresourcedefinition.apiextensions.k8s.io/vaults.vault.banzaicloud.com unchanged
+deployment.apps/vault-operator configured
+clusterrole.rbac.authorization.k8s.io/vault-operator unchanged
+clusterrolebinding.rbac.authorization.k8s.io/vault-operator unchanged
+serviceaccount/vault-operator unchanged
+service/vault-operator unchanged
