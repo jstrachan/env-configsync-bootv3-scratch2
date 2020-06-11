@@ -2,15 +2,15 @@
 apiVersion: jenkins.io/v1
 kind: SourceRepository
 metadata:
-  name: "myorg-environment-mycluster-dev"
+  name: "jstrachan-env-configsync-bootv3-scratch2"
   namespace: jx
   labels:
     jenkins.io/gitSync: "false"
 spec:
   provider: "https://github.com"
   providerName: 'github'
-  org: "myorg"
-  repo: "environment-mycluster-dev"
+  org: "jstrachan"
+  repo: "env-configsync-bootv3-scratch2"
   description: "the git repository for the Dev environment"
   scheduler:
     kind: Scheduler
