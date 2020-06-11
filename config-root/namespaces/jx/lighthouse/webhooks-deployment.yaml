@@ -10,6 +10,7 @@ metadata:
     app: lighthouse-webhooks
   annotations:
     checksum/config: f83b14a9bdb45f9ef5ab5817de37e4ff8eda78679088075b332c67bdb3c8f20c
+    wave.pusher.com/update-on-config-change: "true"
 spec:
   replicas: 2
   selector:
@@ -31,9 +32,9 @@ spec:
         - name: "GIT_KIND"
           value: "github"
         - name: "GIT_SERVER"
-          value: ""
+          value: "https://github.com"
         - name: "GIT_USER"
-          value:
+          value: jenkins-x-labs-bot
         - name: "GIT_TOKEN"
           valueFrom:
             secretKeyRef:

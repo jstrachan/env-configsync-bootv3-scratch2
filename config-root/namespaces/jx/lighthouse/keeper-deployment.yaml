@@ -4,6 +4,8 @@ kind: Deployment
 metadata:
   name: lighthouse-keeper
   namespace: jx
+  annotations:
+    wave.pusher.com/update-on-config-change: "true"
   labels:
     draft: draft-app
     chart: "lighthouse-0.0.633"
@@ -58,9 +60,9 @@ spec:
         - name: "GIT_KIND"
           value: "github"
         - name: "GIT_SERVER"
-          value: ""
+          value: "https://github.com"
         - name: "GIT_USER"
-          value:
+          value: jenkins-x-labs-bot
         - name: "GIT_TOKEN"
           valueFrom:
             secretKeyRef:
