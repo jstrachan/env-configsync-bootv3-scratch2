@@ -14,5 +14,3 @@ spec:
       - backend:
           serviceName: godemo48
           servicePort: 80
-status:
-  loadBalancer: {}

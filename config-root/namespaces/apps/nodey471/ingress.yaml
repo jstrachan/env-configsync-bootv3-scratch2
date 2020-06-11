@@ -14,5 +14,3 @@ spec:
       - backend:
           serviceName: nodey471
           servicePort: 80
-status:
-  loadBalancer: {}

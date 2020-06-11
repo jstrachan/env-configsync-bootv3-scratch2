@@ -14,5 +14,3 @@ spec:
       - backend:
           serviceName: hook
           servicePort: 80
-status:
-  loadBalancer: {}

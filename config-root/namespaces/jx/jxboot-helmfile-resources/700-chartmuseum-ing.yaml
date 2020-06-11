@@ -14,5 +14,3 @@ spec:
       - backend:
           serviceName: jenkins-x-chartmuseum
           servicePort: 8080
-status:
-  loadBalancer: {}
