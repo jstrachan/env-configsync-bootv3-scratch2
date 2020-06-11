@@ -50,7 +50,7 @@ spec:
         - name: "LOGRUS_FORMAT"
           value: "json"
         - name: JX_DEFAULT_IMAGE
-          value: ""
+          value: "gcr.io/jenkinsxio-labs-private/jxl:0.0.165"
         ports:
         - containerPort: 8080
         livenessProbe:
