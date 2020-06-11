@@ -1,0 +1,11 @@
+apiVersion: kpt.dev/v1alpha1
+kind: Kptfile
+metadata:
+    name: build-controller
+upstream:
+    type: git
+    git:
+        commit: efda4f55a89f6e6badc5c5fb7e1cb581e1b16c61
+        repo: https://github.com/jenkins-x/jxr-kube-resources
+        directory: /jenkins-x/jx
+        ref: master
