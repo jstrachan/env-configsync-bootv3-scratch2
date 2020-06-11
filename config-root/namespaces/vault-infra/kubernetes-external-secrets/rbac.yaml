@@ -11,7 +11,7 @@ metadata:
 rules:
 - apiGroups: [""]
   resources: ["secrets"]
-  verbs: ["create", "update"]
+  verbs: ["get", "list", "create", "update"]
 - apiGroups: [""]
   resources: ["namespaces"]
   verbs: ["get", "watch", "list"]
@@ -45,7 +45,7 @@ roleRef:
   name: kubernetes-external-secrets
 subjects:
 - name: kubernetes-external-secrets
-  namespace: ext-secrets
+  namespace: vault-infra
   kind: ServiceAccount
 ---
 # Source: kubernetes-external-secrets/templates/rbac.yaml
@@ -64,5 +64,5 @@ roleRef:
   name: system:auth-delegator
 subjects:
 - name: kubernetes-external-secrets
-  namespace: ext-secrets
+  namespace: vault-infra
   kind: ServiceAccount

@@ -114,7 +114,7 @@ spec:
       roles:
       - # Allow every pod in the default namespace to use the secret kv store
         name: vault-infra
-        bound_service_account_names: ["vault-infra", "vault-secrets-webhook", "vault"]
+        bound_service_account_names: ["vault-infra", "vault-secrets-webhook", "vault", "kubernetes-external-secrets"]
         bound_service_account_namespaces: ["vault-infra", "vswh"]
         policies: ["allow_secrets", "allow_pki"]
         ttl: 1h

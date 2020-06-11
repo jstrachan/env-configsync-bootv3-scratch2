@@ -12,13 +12,21 @@ cluster:
   gitKind: github
   gitName: github
   gitServer: https://github.com
-  namespace: myapps
+  namespace: jx
   project: jstrachan-multicluster
   provider: gke
   registry: gcr.io
   zone: europe-west1-d
 environments:
-- key: dev
+- ingress:
+    domain: ""
+    externalDNS: false
+    namespaceSubDomain: ""
+    tls:
+      email: ""
+      enabled: false
+      production: false
+  key: dev
   owner: jstrachan
   repository: env-configsync-bootv3-scratch2
 gitops: true
