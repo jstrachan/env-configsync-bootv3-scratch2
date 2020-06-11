@@ -36,6 +36,6 @@ spec:
     importMode: YAML
     promotionEngine: Prow
     prowEngine: Tekton
-    versionStreamUrl: "https://github.com/jenkins-x/jenkins-x-versions.git"
+    versionStreamUrl: "https://github.com/jenkins-x/jxr-versions.git"
     versionStreamRef: "master"
     useGitOps: true
