@@ -10,7 +10,7 @@ metadata:
 spec:
   source:
     ref: "master"
-    url: https://github.com/myorg/environment-mycluster-dev.git
+    url: https://github.com/jstrachan/env-configsync-bootv3-scratch2
   kind: Development
   label: Development
   namespace: jx
@@ -25,7 +25,7 @@ spec:
       kind: Scheduler
       name: default
     dockerRegistryOrg: "myproject"
-    envOrganisation: myorg
+    envOrganisation: jstrachan
     gitServer: https://github.com
     gitPublic: true
     helmTemplate: true
