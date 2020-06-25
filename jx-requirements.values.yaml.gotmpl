@@ -1,0 +1,69 @@
+jxRequirements:
+  autoUpdate:
+    enabled: false
+    schedule: ""
+  bootConfigURL: https://github.com/jstrachan/env-configsync-bootv3-scratch2.git
+  buildPackRef: kpt
+  buildPackURL: https://github.com/jstrachan/jxr-packs-kubernetes.git
+  cluster:
+    clusterName: tmpcluster
+    devEnvApprovers:
+    - jstrachan
+    environmentGitOwner: jstrachan
+    gitKind: github
+    gitName: github
+    gitServer: https://github.com
+    namespace: staging
+    project: jstrachan-multicluster
+    provider: gke
+    registry: gcr.io
+    zone: europe-west1-d
+  environments:
+  - gitKind: github
+    gitServer: https://github.com
+    ingress:
+      domain: ""
+      externalDNS: false
+      namespaceSubDomain: ""
+      tls:
+        email: ""
+        enabled: false
+        production: false
+    key: dev
+    owner: jstrachan
+    promotionStrategy: Auto
+    repository: env-configsync-bootv3-scratch2
+  gitops: true
+  helmfile: true
+  ingress:
+    domain: 34.76.100.223.nip.io
+    externalDNS: false
+    namespaceSubDomain: -jx.
+    tls:
+      email: ""
+      enabled: false
+      production: false
+  kaniko: true
+  repository: nexus
+  secretStorage: gsm
+  storage:
+    backup:
+      enabled: false
+      url: ""
+    logs:
+      enabled: false
+      url: ""
+    reports:
+      enabled: false
+      url: ""
+    repository:
+      enabled: false
+      url: ""
+  vault: {}
+  velero:
+    schedule: ""
+    ttl: ""
+  versionStream:
+    ref: e3cb4443dd4d0c7e99e01e3e4014aae8805a9d0d
+    url: https://github.com/jenkins-x/jxr-versions.git
+  webhook: lighthouse

@@ -1,7 +1,7 @@
 autoUpdate:
   enabled: false
   schedule: ""
-bootConfigURL: https://github.com/jenkins-x/jxr-boot-config
+bootConfigURL: https://github.com/jstrachan/env-configsync-bootv3-scratch2.git
 buildPackRef: kpt
 buildPackURL: https://github.com/jstrachan/jxr-packs-kubernetes.git
 cluster:
@@ -12,13 +12,15 @@ cluster:
   gitKind: github
   gitName: github
   gitServer: https://github.com
-  namespace: jx
+  namespace: staging
   project: jstrachan-multicluster
   provider: gke
   registry: gcr.io
   zone: europe-west1-d
 environments:
-- ingress:
+- gitKind: github
+  gitServer: https://github.com
+  ingress:
     domain: ""
     externalDNS: false
     namespaceSubDomain: ""
@@ -28,8 +30,10 @@ environments:
       production: false
   key: dev
   owner: jstrachan
+  promotionStrategy: Auto
   repository: env-configsync-bootv3-scratch2
 gitops: true
+helmfile: true
 ingress:
   domain: 34.76.100.223.nip.io
   externalDNS: false
@@ -40,6 +44,7 @@ ingress:
     production: false
 kaniko: true
 repository: nexus
+secretStorage: gsm
 storage:
   backup:
     enabled: false
